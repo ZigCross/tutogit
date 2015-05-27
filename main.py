@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 from archivo import guardardatos
+from prueba  import prueba 
 
 salir = False
 
@@ -9,8 +10,8 @@ while not salir:
 
 	if opcion == '1':
 		passwd = raw_input('Ingrese una contrasena alfanumerica en minusculas: ')
-		# Aqui va el codigo de ramses
-		if funcion_ramses(passwd):
+		
+		if prueba(passwd):
 			guardardatos(passwd)
 
 	elif opcion == '2':
