@@ -1,17 +1,18 @@
 #!/usr/bin/env python
 
-archivo = open('prueba.txt', 'r')
+def validar_clave(passwd):
 
-linea=archivo.readline()
+	archivo = open('texto.txt', 'r')
 
-claves = []
+	claves =archivo.read()
 
-while linea!="":
-	print linea
-	linea = archivo.readline()
-	claves.append(linea)
+	lista_claves = claves.split("\n")
 
-print claves
+	if passwd in lista_claves:
+		print "La clave se encontro"
+	
+	else:
+		print "La clave no se encontro"
 
-archivo.close()
+	archivo.close()
 

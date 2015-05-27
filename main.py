@@ -2,6 +2,7 @@
 
 from archivo import guardardatos
 from prueba  import prueba 
+from validar import validar_clave
 
 salir = False
 
@@ -15,7 +16,10 @@ while not salir:
 			guardardatos(passwd)
 
 	elif opcion == '2':
-		print "Bloque de la opcion 2"
+		passwd2 = raw_input('Ingrese una contrasena alfanumerica: ')
+
+		validar_clave(passwd2)
+
 	elif opcion == '3':
 		salir = True
 		print "Adios!"
