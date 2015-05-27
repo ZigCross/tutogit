@@ -1,8 +1,0 @@
-casa
-perro
-gato
-telefono
-elmio
-tapete
-jabon
-comida
